@@ -2,8 +2,9 @@
 class Main {
     public static void main(String[] args) {
     int numeroIf = 1;
-    int numeroWhile = 0;
-    int numeroFor = 0;
+    int numeroWhile = 1;
+    int numeroDoWhile = 3;
+    
    var estacion = "VERANO";
     if(numeroIf > 0 ){
     System.out.println("el numero es mayor que 0");}
@@ -15,16 +16,17 @@ class Main {
         System.out.println("el numero es menor que 0");
     }
     while(numeroWhile < 3){
-        System.out.println(numeroWhile);
+        System.out.println("la variable while vale" + numeroWhile);
         numeroWhile++;
     
     }
     do{
-        System.out.println(numeroWhile);
-        numeroWhile++;
+        
+        numeroDoWhile++;
+        System.out.println("la variable dowhile vale" + numeroDoWhile);
     }
-    while(numeroWhile < 3);
-    for(;numeroFor < 3; numeroFor++){
+    while(numeroDoWhile < 3);
+    for(int numeroFor = 0;numeroFor <= 3; numeroFor++){
         System.out.println(numeroFor);
     }
     switch(estacion){
